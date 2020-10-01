@@ -43,6 +43,7 @@
 
 <li class="active"><a href="<?php echo base_url();?>home"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Dashboard</a></li>
 <li><a href="<?php echo base_url();?>approval/approval_list"><svg class="glyph stroked email"><use xlink:href="#stroked-email"/></svg><use xlink:href="#stroked-male-user"></use></svg> Aprroval Ticket</a></li>
+<li><a href="<?php echo base_url();?>list_ticket/ticket_list"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> List Ticket (<?php if(empty($notif_approval)) { echo "0"; }else{ echo $notif_list_ticket;} ?>)</a></li>
 <li><a href="<?php echo base_url();?>informasi_view"><svg class="glyph stroked sound on"><use xlink:href="#stroked-sound-on"/></svg> News</a></li>
 <li><a href="<?php echo base_url();?>dashboard_teknisi/teknisi_view"><svg class="glyph stroked calendar"><use xlink:href="#stroked-male-user"></use></svg> Report Teknisi</a></li>
 
