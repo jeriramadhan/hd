@@ -7,7 +7,8 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">
+				<!-- <a style="background-color: white;" class="navbar-brand" href="#"> -->
+				<a style="background-color: white;" class="navbar-brand" href="#">
 				<img style="max-width:150px; margin-top: -7px;"
              src="<?php echo base_url();?>assets/hd.png">
 						 </a>

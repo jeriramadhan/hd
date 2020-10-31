@@ -109,6 +109,11 @@
 						<?php echo form_dropdown('id_kondisi',$dd_kondisi, $id_kondisi, ' id="id_kondisi" required class="form-control"');?>
 					    </div>
 
+							<div class="form-group">
+						<label>Handle By</label>
+						<?php echo form_dropdown('id_handle',$dd_handle, $id_handle, ' id="id_handle" required class="form-control"');?>
+					    </div>
+
 					    
 
 				        </div>

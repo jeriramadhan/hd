@@ -88,13 +88,15 @@ class Model_app extends CI_Model{
     public function datalist_ticket()
     {
 
-        $query = $this->db->query("SELECT D.nama, F.nama_dept, A.status, A.id_ticket, A.tanggal, B.nama_sub_kategori, C.nama_kategori
+        $query = $this->db->query("SELECT D.nama, F.nama_dept, A.status, A.id_ticket, A.tanggal, B.nama_sub_kategori, C.nama_kategori, G.nama_kondisi, H.kategori 
                                    FROM ticket A 
                                    LEFT JOIN sub_kategori B ON B.id_sub_kategori = A.id_sub_kategori
                                    LEFT JOIN kategori C ON C.id_kategori = B.id_kategori
                                    LEFT JOIN karyawan D ON D.nik = A.reported
                                    LEFT JOIN bagian_departemen E ON E.id_bagian_dept = D.id_bagian_dept
                                    LEFT JOIN departemen F ON F.id_dept = E.id_dept
+                                   LEFT JOIN kondisi G ON G.id_kondisi = A.id_kondisi
+                                   LEFT JOIN handle H ON H.id_handle = A.id_handle
                                    WHERE A.status IN (2,3,4,5,6)");
         return $query->result();
 
@@ -299,6 +301,17 @@ class Model_app extends CI_Model{
         $value[''] = '-- PILIH --';
         foreach ($query->result() as $row){
             $value[$row->id_kondisi] = $row->nama_kondisi."  -  (TARGET PROSES ".$row->waktu_respon." "."HARI)";
+        }
+        return $value;
+    }
+    public function dropdown_handle()
+    {
+        $sql = "SELECT * FROM handle ORDER BY kategori";
+        $query = $this->db->query($sql);
+            
+        $value[''] = '-- PILIH --';
+        foreach ($query->result() as $row){
+            $value[$row->id_handle] = $row->kategori;
         }
         return $value;
     }

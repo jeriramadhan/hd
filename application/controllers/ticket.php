@@ -87,6 +87,9 @@ function __construct(){
 
 		$data['dd_kondisi'] = $this->model_app->dropdown_kondisi();
 		$data['id_kondisi'] = "";
+		
+		$data['dd_handle'] = $this->model_app->dropdown_handle();
+		$data['id_handle'] = "";
 
 		$data['problem_summary'] = "";
 		$data['problem_detail'] = "";
@@ -116,6 +119,8 @@ function __construct(){
  	$problem_summary = strtoupper(trim($this->input->post('problem_summary')));
  	$problem_detail = strtoupper(trim($this->input->post('problem_detail')));
  	$id_teknisi = strtoupper(trim($this->input->post('id_teknisi')));
+ 	$id_kondisi = strtoupper(trim($this->input->post('id_kondisi')));
+ 	$id_handle = strtoupper(trim($this->input->post('id_handle')));
  	
  	$data['id_ticket'] = $ticket;
  	$data['reported'] = $id_user;
@@ -124,6 +129,8 @@ function __construct(){
  	$data['problem_summary'] = $problem_summary;
  	$data['problem_detail'] = $problem_detail;
  	$data['id_teknisi'] = $id_teknisi;
+ 	$data['id_kondisi'] = $id_kondisi;
+ 	$data['id_handle'] = $id_handle;
  	$data['status'] = 1;
  	$data['progress'] = 0;
 

@@ -25,7 +25,9 @@
 						        <th data-field="iddd" data-sortable="true">Tanggal</th>
 						        <th data-field="idddd" data-sortable="true">Nama Kategori</th>
 						        <th data-field="iddddd" data-sortable="true">Nama Sub Kategori</th>
-						        <th data-field="idddddd" data-sortable="true">Status</th>
+						        <th data-field="idddddd" data-sortable="true">Kondisi</th>
+						        <th data-field="iddddddd" data-sortable="true">Handle By</th>
+						        <th data-field="idddddddd" data-sortable="true">Status</th>
 						    </tr>
                             </thead>
                             <tbody>
@@ -47,6 +49,8 @@
 						        <td data-field="id"><?php echo $row->tanggal;?></td>
 						        <td data-field="id"><?php echo $row->nama_kategori;?></td>
 						        <td data-field="id"><?php echo $row->nama_sub_kategori;?></td>
+						        <td data-field="id"><?php echo $row->nama_kondisi;?></td>
+						        <td data-field="id"><?php echo $row->kategori;?></td>
 						        <td data-field="id">
 						        <?php 
 						        if($row->status==2) { echo "APPROVAL INTERNAL";}
@@ -118,6 +122,8 @@ $(".modal-body #mod").text(id);
 });
 </script>
 
+<h3>Informasi : </h3>
+<h4>Klik Id Ticket Untuk Memilih Teknisi Yang Mengerjakan</h4>
 
 
 
