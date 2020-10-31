@@ -123,7 +123,7 @@ $(".modal-body #mod").text(id);
 </script>
 
 <h3>Informasi : </h3>
-<h4>Klik Id Ticket Untuk Memilih Teknisi Yang Mengerjakan</h4>
+<h4>Klik Id Ticket Untuk Memilih Teknisi Yang Mengerjakan atau Melihat Progress Pekerjaan</h4>
 
 
 
