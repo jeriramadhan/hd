@@ -47,7 +47,7 @@ DIPROSES OLEH
 </a>
 
 <a href="#" class="list-group-item">
-<b>TANGAL TICKET : <?php echo $tanggal;?></b>
+<b>TANGGAL TICKET : <?php echo $tanggal;?></b>
 </a>
 
 
@@ -55,7 +55,7 @@ DIPROSES OLEH
 <a href="#" class="list-group-item">
 <b>
  
-  TANGAL SOLVED : <span class="label label-primary"><?php echo $tanggal;?></span></b>
+  TANGGAL SOLVED : <span class="label label-primary"><?php echo $tanggal;?></span></b>
  
 </a>
 

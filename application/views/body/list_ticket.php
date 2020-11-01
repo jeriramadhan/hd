@@ -122,8 +122,9 @@ $(".modal-body #mod").text(id);
 });
 </script>
 
-<h3>Informasi : </h3>
-<h4>Klik Id Ticket Untuk Memilih Teknisi Yang Mengerjakan atau Melihat Progress Pekerjaan</h4>
+		<div class="alert bg-info" role="alert">
+					<svg class="glyph stroked flag"><use xlink:href="#stroked-flag"></use></svg> Klik Id Ticket Untuk Memilih Teknisi Yang Mengerjakan atau Melihat Progress Pekerjaan <a href="#" class="pull-right"><span class="glyphicon glyphicon-remove"></span></a>
+				</div>
 
 
 
