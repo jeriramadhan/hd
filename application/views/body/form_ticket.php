@@ -88,7 +88,8 @@
 						<div class="col-md-6">
 
 						<div class="form-group">
-						<label>Kategori Masalah</label>
+						<label>Kategori Masalah </label>
+						<p><em>Pilihlah 1 kategori masalah</em></p>
 						<?php echo form_dropdown('id_kategori',$dd_kategori, $id_kategori, ' id="id_kategori" required class="form-control"');?>
 					    </div>
 
@@ -106,11 +107,13 @@
 
 					    <div class="form-group">
 						<label>Ugently / Kondisi</label>
+						<p><em>Pilihlah kondisi masalah</em></p>
 						<?php echo form_dropdown('id_kondisi',$dd_kondisi, $id_kondisi, ' id="id_kondisi" required class="form-control"');?>
 					    </div>
 
 							<div class="form-group">
 						<label>Handle By</label>
+						<p><em>Pilihlah penanganan masalah</em></p>
 						<?php echo form_dropdown('id_handle',$dd_handle, $id_handle, ' id="id_handle" required class="form-control"');?>
 					    </div>
 
@@ -122,12 +125,12 @@
 
 					    <div class="form-group">
 						<label>Subject Masalah</label>
-						<input class="form-control" name="problem_summary" placeholder="problem_summary" value="<?php echo $problem_summary;?>" required>
+						<input class="form-control" name="problem_summary" placeholder="tuliskan subject masalah pada kolom ini" value="<?php echo $problem_summary;?>" required>
 					    </div>
 
 					    <div class="form-group">
 						<label>Deskripsi Masalah</label>
-						<textarea name="problem_detail" class="form-control" rows="10"><?php echo $problem_detail;?></textarea>
+						<textarea name="problem_detail" class="form-control" placeholder="tuliskan detail deskripsi masalah yang anda alami" rows="10"><?php echo $problem_detail;?></textarea>
 					    </div>
 
 					    

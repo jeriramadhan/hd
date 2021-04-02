@@ -27,7 +27,8 @@
 						        <th data-field="iddddd" data-sortable="true">Nama Sub Kategori</th>
 						        <th data-field="idddddd" data-sortable="true">Kondisi</th>
 						        <th data-field="iddddddd" data-sortable="true">Handle By</th>
-						        <th data-field="idddddddd" data-sortable="true">Status</th>
+						        <th data-field="idddddddd" data-sortable="true">Teknisi</th>
+						        <th data-field="iddddddddd" data-sortable="true">Status</th>
 						    </tr>
                             </thead>
                             <tbody>
@@ -51,9 +52,10 @@
 						        <td data-field="id"><?php echo $row->nama_sub_kategori;?></td>
 						        <td data-field="id"><?php echo $row->nama_kondisi;?></td>
 						        <td data-field="id"><?php echo $row->kategori;?></td>
+										<td data-field="id"><?php echo $row->namtek;?></td>
 						        <td data-field="id">
 						        <?php 
-						        if($row->status==2) { echo "APPROVAL INTERNAL";}
+						        if($row->status==2) { echo "APPROVAL INTERNAL - PILIH TEKNISI";}
 						        else if($row->status==3) { echo "MENUNGGU APPROVAL TEKNISI";}
 						        else if($row->status==4) { echo "PROSES TEKNISI";}
 						        else if($row->status==5) { echo "PENDING TEKNISI";}

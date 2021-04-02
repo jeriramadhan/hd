@@ -8,9 +8,9 @@
 					<span class="icon-bar"></span>
 				</button>
 				<!-- <a style="background-color: white;" class="navbar-brand" href="#"> -->
-				<a style="background-color: white;" class="navbar-brand" href="#">
-				<img style="max-width:150px; margin-top: -7px;"
-             src="<?php echo base_url();?>assets/hd.png">
+				<a class="navbar-brand" href="#">
+				<img style="max-width:100px; margin-top: -12px;"
+             src="<?php echo base_url();?>assets/logo.png">
 						 </a>
 				<!-- <a href="#" class="navbar-left"><img src="<?php echo base_url();?>assets/hd.png"></a> -->
 				<ul class="user-menu">

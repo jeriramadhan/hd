@@ -88,10 +88,11 @@ class Model_app extends CI_Model{
     public function datalist_ticket()
     {
 
-        $query = $this->db->query("SELECT D.nama, F.nama_dept, A.status, A.id_ticket, A.tanggal, B.nama_sub_kategori, C.nama_kategori, G.nama_kondisi, H.kategori 
+        $query = $this->db->query("SELECT D.nama, F.nama_dept, I.nama as namtek, A.status, A.id_ticket, A.tanggal, B.nama_sub_kategori, C.nama_kategori, G.nama_kondisi, H.kategori 
                                    FROM ticket A 
                                    LEFT JOIN sub_kategori B ON B.id_sub_kategori = A.id_sub_kategori
                                    LEFT JOIN kategori C ON C.id_kategori = B.id_kategori
+                                   LEFT JOIN karyawan I ON I.nik = (SELECT nik from teknisi where id_teknisi = A.id_teknisi) 
                                    LEFT JOIN karyawan D ON D.nik = A.reported
                                    LEFT JOIN bagian_departemen E ON E.id_bagian_dept = D.id_bagian_dept
                                    LEFT JOIN departemen F ON F.id_dept = E.id_dept
