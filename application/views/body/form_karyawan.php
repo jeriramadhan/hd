@@ -60,7 +60,7 @@
 						<label>Departemen</label>
 						<?php echo form_dropdown('id_departemen',$dd_departemen, $id_departemen, ' id="id_departemen" required class="form-control"');?>
 					</div>
-
+<!-- 
 					<div id="div-order">
 
 						<?php if($flag=="edit")
@@ -71,7 +71,7 @@
 						}else{}
 					?>
 
-					</div>
+					</div> -->
 
 					<div class="form-group">
 						<label>Jabatan</label>
