@@ -33,13 +33,13 @@
 	<li><a href="<?php echo base_url();?>informasi_view"><svg class="glyph stroked sound on"><use xlink:href="#stroked-sound-on"/></svg> News</a></li>
 	
 
-<?php } else if($this->session->userdata('level')=="USER" AND $this->session->userdata('id_jabatan')==3){?>
+<?php } else if($this->session->userdata('level')=="USER" AND ($this->session->userdata('id_jabatan')==3 || $this->session->userdata('id_jabatan')==4 || $this->session->userdata('id_jabatan')==5 || $this->session->userdata('id_jabatan')==6 || $this->session->userdata('id_jabatan')==7)){?>
 <li class="active"><a href="<?php echo base_url();?>home"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Dashboard</a></li>
 <li class="active"><a href="<?php echo base_url();?>ticket/add"><svg class="glyph stroked open folder"><use xlink:href="#stroked-open-folder"/></svg> New Ticket</a></li>
 <li><a href="<?php echo base_url();?>myticket/myticket_list"><svg class="glyph stroked open letter"><use xlink:href="#stroked-open-letter"/></svg> My Ticket</a></li>
 
 <li><a href="<?php echo base_url();?>informasi_view"><svg class="glyph stroked sound on"><use xlink:href="#stroked-sound-on"/></svg> News</a></li>
-<?php } else if($this->session->userdata('level')=="USER" AND $this->session->userdata('id_jabatan')==2){?>
+<?php } else if($this->session->userdata('level')=="USER" AND ($this->session->userdata('id_jabatan')==1 || $this->session->userdata('id_jabatan') == 2)){?>
 
 <li class="active"><a href="<?php echo base_url();?>home"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Dashboard</a></li>
 <li><a href="<?php echo base_url();?>approval/approval_list"><svg class="glyph stroked email"><use xlink:href="#stroked-email"/></svg><use xlink:href="#stroked-male-user"></use></svg> Aprroval Ticket</a></li>
